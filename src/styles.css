@@ -1,0 +1,143 @@
+:root {
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body {
+	margin: 0;
+	background: #0f172a;
+	color: #e2e8f0;
+}
+
+.app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 24px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.subtitle {
+    opacity: .8;
+    margin-top: -6px;
+}
+
+.scoreboard {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin: 16px 0 20px;
+}
+
+.card {
+    background: #111827;
+    border: 1px solid #576c89;
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px;
+}
+
+.board {
+    display: grid;
+    gap: 14px;
+    place-items: center;
+    padding: 24px;
+    background: #0b1220;
+    border: 1px solid #1f2937;
+    border-radius: 12px;
+    color: #e5e7eb;
+    font-weight: 600;
+    min-height: 200px;
+}
+
+.message {
+    opacity: .9;
+}
+
+.pot {
+    background: #0b1326;
+    padding: 8px 12px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+.controls {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 10px;
+    padding: 12px 20px;
+    border: 1px solid #1f2937;
+    background: #1f2937;
+    color: #e5e7eb;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s ease;
+    min-width: 120px;
+}
+
+button:hover:not(.disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+button.primary {
+    background: #2563eb;
+    border-color: #1d4ed8;
+}
+
+button.secondary {
+    background: #374151;
+    border-color: #991b1b;
+}
+
+button.danger {
+    background: #b91c1c;
+    border-color: #991b1b;
+}
+
+button.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+}
+
+.die {
+    display: grid;
+    gap: 8px;
+    place-items: center;
+    width: 120px;
+    height: 120px;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 auto;
+    background: #1f2937;
+    border: 2px solid #374151;
+    border-radius: 16px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.die .label {
+    font-size: 12px;
+    opacity: .7;
+}
+
+.footer {
+    margin-top: auto;
+    padding-top: 20px;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #f1f5f9;
+}
+
+.subtitle {
+    text-align: center;
+}
