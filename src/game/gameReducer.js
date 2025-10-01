@@ -48,6 +48,7 @@ export function gameReducer(state, action) {
                     round: state.round +1,
                     message: "Rolled! Life -1",
                 };
+                return endIfWinOrTimeout(next);
             }
             return {
                 ...state,
